@@ -4,10 +4,16 @@ html.debug {
 	
 	body {
 		opacity: 0.7;
-		margin: 0;
 		color: $primary-color;
 		font-family: $primary-font;
 	}
+}
+//Reset
+*,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 //Remove Style of links
