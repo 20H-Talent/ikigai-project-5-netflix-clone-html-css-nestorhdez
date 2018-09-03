@@ -20,17 +20,19 @@
             </a>
         </div>
         <ul class="nav-list">
-            <li class="home">Home</li>
-            <li class="tv-shows">TV Shows</li>
-            <li class="movies">Movies</li>
-            <li class="added">Recently Added</li>
-            <li class="my-list">My List</li>
+            <li class="home"><a class="home" href="#">Home</a></li>
+            <li class="tv-shows"><a class="tv-shows" href="#">TV Shows</a></li>
+            <li class="movies"><a class="movies" href="#">Movies</a></li>
+            <li class="added"><a class="added" href="#">Recently Added</a></li>
+            <li class="my-list"><a class="my-list" href="#">My List</a></li>
         </ul>
         <form class="search-form" action="">
-            <a href="#">
-                <img class="loupe-img" src="icons/lupa.svg" alt="loupe-icon">
-            </a>
-            <input class="search-input" type="text">
+            <label for="search">
+                <a href="#">
+                    <img class="loupe-img" src="icons/lupa.svg" alt="loupe-icon">
+                </a>
+            </label>
+            <input id="search" class="search-input" type="text">
         </form>
     </nav>
     
