@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="debug">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,29 @@
     <meta  property="og:title" content="Title Example" />
     <meta  property="og:description" content="Some short description (50–300 characters)." />
     <meta  property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
 </head>
 <body>
-
+    <nav class="main-nav">
+        <div class="logo-img">
+            <a href="#">
+            <img src="icons/netflix-logo.svg" alt="logo-netflix">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li class="home">Home</li>
+            <li class="tv-shows">TV Shows</li>
+            <li class="movies">Movies</li>
+            <li class="added">Recently Added</li>
+            <li class="my-list">My List</li>
+        </ul>
+        <form class="search-form" action="">
+            <a href="#">
+                <img class="loupe-img" src="icons/lupa.svg" alt="loupe-icon">
+            </a>
+            <input class="search-input" type="text">
+        </form>
+    </nav>
     
 </body>
 </html>

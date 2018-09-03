@@ -1,0 +1,34 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    .logo-img {
+        margin: 22px 45px 21.14px 58px;
+    }
+    .nav-list {
+        display: flex;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        li {
+            list-style: none;
+            color: $white;
+            font-family: Helvetica, sans-serif;
+            font-size: 14px;
+            margin-right: 18px;
+            letter-spacing: 0.5px;
+        }
+        .home {
+            font-weight: bold;
+        }
+        .my-list {
+            margin-left: -2px;
+        }
+    }
+    .search-form {
+        margin-left: auto;
+        margin-right: 61.3px;
+       .search-input {
+          display: none; 
+       }
+    }
+}
