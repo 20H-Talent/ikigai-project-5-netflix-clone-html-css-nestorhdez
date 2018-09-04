@@ -7,7 +7,8 @@ html.debug {
 		color: $primary-color;
 		font-family: $primary-font;
 		background: url(/movie-images/pelicula-inocents.svg) no-repeat top left;
-		background-size: 100%; 
+		background-size: 100%;
+		background-color: $nav-bg;
 	}
 }
 //Reset
