@@ -1,0 +1,66 @@
+//Carousels
+main {
+    margin-top: 84px;
+    .section-v-title {
+        height: 24px;
+        width: 203px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.16px;
+        line-height: 24px;
+        margin-left: 58px;
+    }
+    .section-h-title {
+        height: 24px;
+        width: 185px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.16px;
+        line-height: 24px;
+        margin-left: 58px;
+    }
+    .movie-v-container, .movie-h-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        .movie-v:first-child {
+            margin-left: 58px;
+        }
+        .movie-h:first-child {
+            margin-left: 60px;
+        }
+        .img-overlay-v, .img-overlay-h {
+            display: none;
+        }
+        .movie-v, .movie-h {
+            margin-right: 5px;
+        }
+    }
+}
+//Vertical images carousel
+.movie-v-container {
+    margin-bottom: 60px;
+    margin-top: 11px;
+}
+
+//Horizontal images carousel
+.movie-h-container {
+    margin-top: 12px;
+    .progress-bar {
+        position: relative;
+        z-index: -1;
+        height: 4px;
+        width: 132px;
+        background-color: $progress-bar;
+        margin: 2px auto 0 auto;
+        .progress-status {
+            width: 70px;
+            background-color: $progress-status;
+        }
+    }
+}
+
+//hide the scroll bar
+.movie-v-container::-webkit-scrollbar, .movie-h-container::-webkit-scrollbar {
+    display: none;
+  }
