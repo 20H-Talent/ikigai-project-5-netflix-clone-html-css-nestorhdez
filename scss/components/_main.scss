@@ -47,13 +47,12 @@ main {
 .movie-h-container {
     margin-top: 12px;
     .progress-bar {
-        position: relative;
-        z-index: -1;
         height: 4px;
         width: 132px;
         background-color: $progress-bar;
         margin: 2px auto 0 auto;
         .progress-status {
+            height: 4px;
             width: 70px;
             background-color: $progress-status;
         }
