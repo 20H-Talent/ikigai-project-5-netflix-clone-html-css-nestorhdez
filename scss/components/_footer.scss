@@ -20,11 +20,20 @@ footer {
             display: flex;
             flex-direction: column;
             span {
-                margin-bottom: 15px;
+                margin-bottom: 13px;
                 a {
-                    color: $footer-text; 
+                    color: $footer-text;
+                    font-size: 13px;
+                    letter-spacing: 0.25px;
                 }
             }
         }
     }
+}
+
+.netflix-inc {
+    color: $footer-text;
+	font-size: 14px;
+	letter-spacing: 0.11px;
+	line-height: 17px;
 }
