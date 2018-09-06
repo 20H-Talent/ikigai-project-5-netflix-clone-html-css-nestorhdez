@@ -167,4 +167,29 @@ main {
 .hide {
   opacity: 0; }
 
+footer {
+  height: 246px;
+  width: 849px;
+  margin: 135px 362px 35px 229px;
+  display: flex;
+  flex-direction: column; }
+  footer .social-media {
+    width: 191px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  footer .sections {
+    width: 849px;
+    margin: 17px 0 77px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer .sections .section-content {
+      display: flex;
+      flex-direction: column; }
+      footer .sections .section-content span {
+        margin-bottom: 15px; }
+        footer .sections .section-content span a {
+          color: #7F7F7F; }
+
 /*# sourceMappingURL=styles.css.map */

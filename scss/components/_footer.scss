@@ -1,0 +1,30 @@
+footer {
+	height: 246px;
+    width: 849px;
+    margin: 135px 362px 35px 229px;
+    display: flex;
+    flex-direction: column;
+    .social-media {
+        width: 191px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sections {
+        width: 849px;
+        margin: 17px 0 77px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-bottom: 15px;
+                a {
+                    color: $footer-text; 
+                }
+            }
+        }
+    }
+}
