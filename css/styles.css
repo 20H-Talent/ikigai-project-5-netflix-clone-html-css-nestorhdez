@@ -131,14 +131,26 @@ main {
     display: flex;
     flex-direction: row;
     overflow-x: auto; }
+    main .movie-v-container .movie-v, main .movie-v-container .movie-h, main .movie-h-container .movie-v, main .movie-h-container .movie-h {
+      margin-right: 5px;
+      position: relative; }
     main .movie-v-container .movie-v:first-child, main .movie-h-container .movie-v:first-child {
       margin-left: 58px; }
     main .movie-v-container .movie-h:first-child, main .movie-h-container .movie-h:first-child {
       margin-left: 60px; }
     main .movie-v-container .img-overlay-v, main .movie-v-container .img-overlay-h, main .movie-h-container .img-overlay-v, main .movie-h-container .img-overlay-h {
-      display: none; }
-    main .movie-v-container .movie-v, main .movie-v-container .movie-h, main .movie-h-container .movie-v, main .movie-h-container .movie-h {
-      margin-right: 5px; }
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 18px 11px; }
 
 .carousel-v-container {
   margin-bottom: 60px; }
@@ -166,6 +178,41 @@ main {
 
 .hide {
   opacity: 0; }
+
+.movie-v:hover .img-overlay-v {
+  opacity: 1; }
+
+.img-overlay-v .btn-play {
+  margin-bottom: 7px; }
+.img-overlay-v .hover-title {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 19px;
+  margin-bottom: 6px; }
+.img-overlay-v .movie-info {
+  width: 172px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }
+  .img-overlay-v .movie-info .match {
+    color: #46D36A;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 17px; }
+  .img-overlay-v .movie-info .age-rate-s {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 17px;
+    padding: 1px 5px;
+    border: 1px solid #FFFFFF; }
+  .img-overlay-v .movie-info .time {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 17px; }
+.img-overlay-v .description-v {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 6px; }
 
 footer {
   height: 246px;

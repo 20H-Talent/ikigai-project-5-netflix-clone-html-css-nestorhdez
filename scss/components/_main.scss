@@ -23,6 +23,10 @@ main {
         display: flex;
         flex-direction: row;
         overflow-x: auto;
+        .movie-v, .movie-h {
+            margin-right: 5px;
+            position: relative;
+        }
         .movie-v:first-child {
             margin-left: 58px;
         }
@@ -30,10 +34,18 @@ main {
             margin-left: 60px;
         }
         .img-overlay-v, .img-overlay-h {
-            display: none;
-        }
-        .movie-v, .movie-h {
-            margin-right: 5px;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            background-color: rgba($secondary-color,0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 18px 11px;
         }
     }
 }
@@ -75,4 +87,53 @@ main {
 //Hide Progress and status bar
 .hide {
     opacity: 0;
+}
+
+//Hover of movies
+.movie-v:hover {
+    .img-overlay-v {
+        opacity: 1;
+    }
+}
+
+//Movie info hover
+.img-overlay-v {
+    .btn-play {
+        margin-bottom: 7px; 
+    }
+    .hover-title {
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        line-height: 19px;
+        margin-bottom: 6px;
+    }
+    .movie-info {
+        width: 172px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        .match {
+            color: $match;
+            font-size: 14px;
+            letter-spacing: 0.4px;
+            line-height: 17px;
+        }
+        .age-rate-s {
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            line-height: 17px;
+            padding: 1px 5px;
+            border: 1px solid $primary-color;
+        }
+        .time {
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            line-height: 17px;
+        }
+    }
+    .description-v {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 6px;
+    }
 }
