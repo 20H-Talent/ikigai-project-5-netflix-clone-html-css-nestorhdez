@@ -38,28 +38,41 @@ main {
     }
 }
 //Vertical images carousel
-.movie-v-container {
+.carousel-v-container {
     margin-bottom: 60px;
-    margin-top: 11px;
+    .movie-v-container {
+        margin-top: 11px;
+    }
 }
 
+
 //Horizontal images carousel
-.movie-h-container {
-    margin-top: 12px;
-    .progress-bar {
-        height: 4px;
-        width: 132px;
-        background-color: $progress-bar;
-        margin: 2px auto 0 auto;
-        .progress-status {
+.carousel-h-container{
+    height: 169px;
+    margin-bottom: 40px;
+    .movie-h-container {
+        margin-top: 12px;
+        .progress-bar {
             height: 4px;
-            width: 70px;
-            background-color: $progress-status;
+            width: 132px;
+            background-color: $progress-bar;
+            margin: 2px auto 0 auto;
+            .progress-status {
+                height: 4px;
+                width: 70px;
+                background-color: $progress-status;
+            }
         }
     }
 }
 
 //hide the scroll bar
-.movie-v-container::-webkit-scrollbar, .movie-h-container::-webkit-scrollbar {
+.movie-v-container::-webkit-scrollbar,
+ .movie-h-container::-webkit-scrollbar {
     display: none;
   }
+
+//Hide Progress and status bar
+.hide {
+    opacity: 0;
+}

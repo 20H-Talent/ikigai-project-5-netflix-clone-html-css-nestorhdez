@@ -140,23 +140,31 @@ main {
     main .movie-v-container .movie-v, main .movie-v-container .movie-h, main .movie-h-container .movie-v, main .movie-h-container .movie-h {
       margin-right: 5px; }
 
-.movie-v-container {
-  margin-bottom: 60px;
-  margin-top: 11px; }
+.carousel-v-container {
+  margin-bottom: 60px; }
+  .carousel-v-container .movie-v-container {
+    margin-top: 11px; }
 
-.movie-h-container {
-  margin-top: 12px; }
-  .movie-h-container .progress-bar {
-    height: 4px;
-    width: 132px;
-    background-color: #606060;
-    margin: 2px auto 0 auto; }
-    .movie-h-container .progress-bar .progress-status {
+.carousel-h-container {
+  height: 169px;
+  margin-bottom: 40px; }
+  .carousel-h-container .movie-h-container {
+    margin-top: 12px; }
+    .carousel-h-container .movie-h-container .progress-bar {
       height: 4px;
-      width: 70px;
-      background-color: #B3212C; }
+      width: 132px;
+      background-color: #606060;
+      margin: 2px auto 0 auto; }
+      .carousel-h-container .movie-h-container .progress-bar .progress-status {
+        height: 4px;
+        width: 70px;
+        background-color: #B3212C; }
 
-.movie-v-container::-webkit-scrollbar, .movie-h-container::-webkit-scrollbar {
+.movie-v-container::-webkit-scrollbar,
+.movie-h-container::-webkit-scrollbar {
   display: none; }
+
+.hide {
+  opacity: 0; }
 
 /*# sourceMappingURL=styles.css.map */
