@@ -7,7 +7,7 @@ html.debug {
     opacity: 0.7;
     color: #FFFFFF;
     font-family: Helvetica, sans-serif;
-    background: url(/movie-images/pelicula-inocents.svg) no-repeat top left;
+    background: url(../movie-images/pelicula-inocents.svg) no-repeat top left;
     background-size: 100%;
     background-color: #141414; }
 
@@ -149,8 +149,7 @@ main {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      padding: 18px 11px; }
+      transition: .3s; }
 
 .carousel-v-container {
   margin-bottom: 60px; }
@@ -179,40 +178,79 @@ main {
 .hide {
   opacity: 0; }
 
-.movie-v:hover .img-overlay-v {
+.movie-v:hover .img-overlay-v, .movie-v:hover .img-overlay-h, .movie-h:hover .img-overlay-v, .movie-h:hover .img-overlay-h {
   opacity: 1; }
 
-.img-overlay-v .btn-play {
-  margin-bottom: 7px; }
-.img-overlay-v .hover-title {
-  font-size: 16px;
-  letter-spacing: 1.2px;
-  line-height: 19px;
-  margin-bottom: 6px; }
-.img-overlay-v .movie-info {
-  width: 172px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between; }
-  .img-overlay-v .movie-info .match {
-    color: #46D36A;
+.img-overlay-v {
+  height: 433px;
+  padding: 18px 11px; }
+  .img-overlay-v .btn-play {
+    margin-bottom: 7px; }
+  .img-overlay-v .hover-title {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 19px;
+    margin-bottom: 6px; }
+  .img-overlay-v .movie-info {
+    width: 172px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+    .img-overlay-v .movie-info .match {
+      color: #46D36A;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      line-height: 17px; }
+    .img-overlay-v .movie-info .age-rate-s {
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      line-height: 17px;
+      padding: 1px 5px;
+      border: 1px solid #FFFFFF; }
+    .img-overlay-v .movie-info .time {
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      line-height: 17px; }
+  .img-overlay-v .description-v {
     font-size: 14px;
-    letter-spacing: 0.4px;
-    line-height: 17px; }
-  .img-overlay-v .movie-info .age-rate-s {
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    line-height: 17px;
-    padding: 1px 5px;
-    border: 1px solid #FFFFFF; }
-  .img-overlay-v .movie-info .time {
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    line-height: 17px; }
-.img-overlay-v .description-v {
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: 6px; }
+    line-height: 18px;
+    margin-top: 6px; }
+
+.img-overlay-h {
+  height: 121px;
+  padding: 11px 11px; }
+  .img-overlay-h .btn-add {
+    width: 14px;
+    height: 14px;
+    align-self: flex-end; }
+  .img-overlay-h .btn-play {
+    width: 19px;
+    height: 19px; }
+  .img-overlay-h .hover-h-title {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 19px; }
+  .img-overlay-h .movie-info {
+    width: 111px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+    .img-overlay-h .movie-info .match {
+      color: #46D36A;
+      font-size: 8px;
+      letter-spacing: 0.4px; }
+    .img-overlay-h .movie-info .age-rate-s {
+      font-size: 8px;
+      letter-spacing: 0.3px;
+      padding: 1px 5px;
+      border: 1px solid #FFFFFF; }
+    .img-overlay-h .movie-info .time {
+      font-size: 8px;
+      letter-spacing: 0.3px; }
+  .img-overlay-h .description-h {
+    font-size: 8px;
+    margin-top: 17px; }
 
 footer {
   height: 246px;
