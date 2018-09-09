@@ -18,10 +18,13 @@ body {
   background-position: 0 0;
   background-size: 100%;
   background-color: #141414; }
-  body.body-search {
+  body.no-bg {
     opacity: .7;
     background-image: none;
     background-color: #141414; }
+    body.no-bg iframe {
+      width: 100vw;
+      height: 100vh; }
 
 a {
   text-decoration: none; }
@@ -370,5 +373,15 @@ footer {
 
 .footer-search {
   margin: 142px 362px 35px 229px; }
+
+.back-btn {
+  opacity: 0;
+  transition: all .5s;
+  position: absolute;
+  top: 72px;
+  left: 45px; }
+
+.no-bg:hover .back-btn {
+  opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
