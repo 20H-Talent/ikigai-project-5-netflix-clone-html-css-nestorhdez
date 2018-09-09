@@ -1,8 +1,7 @@
 @import url(normalize.css);
 html.debug {
   background: transparent url(/mockups/01-search.jpg) no-repeat top left;
-  background-size: 100%;
-  height: 3000px; }
+  background-size: 100%; }
 
 *,
 html {
@@ -19,7 +18,6 @@ body {
   background-size: 100%;
   background-color: #141414; }
   body.no-bg {
-    opacity: .7;
     background-image: none;
     background-color: #141414; }
     body.no-bg iframe {

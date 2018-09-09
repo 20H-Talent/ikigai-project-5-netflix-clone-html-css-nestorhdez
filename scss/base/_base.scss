@@ -1,7 +1,6 @@
 html.debug {
     background: transparent url(/mockups/01-search.jpg) no-repeat top left;
 	background-size: 100%;
-	height: 3000px;
 }
 //Reset
 *,
@@ -20,7 +19,6 @@ body {
 	background-size: 100%;
 	background-color: $nav-bg;
 	&.no-bg {
-		opacity: .7;
 		background-image: none;
 		background-color: $nav-bg;
 		iframe {
