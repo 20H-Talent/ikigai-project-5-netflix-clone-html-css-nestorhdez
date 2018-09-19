@@ -29,7 +29,13 @@ a {
 
 .main-nav {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  transition-property: background-color;
+  transition-duration: .5s; }
   .main-nav .logo-img {
     margin: 22px 45px 21.14px 58px; }
   .main-nav .nav-list {
@@ -93,6 +99,9 @@ a {
         .main-nav .search-form .search-input:focus:-ms-input-placeholder {
           /* Internet Explorer 10+ */
           color: #7F7F7F; }
+
+.main-nav:hover {
+  background-color: #141414; }
 
 .search-page-input {
   width: 268px;

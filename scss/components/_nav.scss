@@ -1,6 +1,12 @@
 .main-nav {
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: .5s;
     .logo-img {
         margin: 22px 45px 21.14px 58px;
     }
@@ -72,6 +78,9 @@
             }
        }
     }
+}
+.main-nav:hover {
+    background-color: $nav-bg;
 }
 
 //SEARCH PAGE
